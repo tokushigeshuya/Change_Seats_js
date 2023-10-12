@@ -30,6 +30,7 @@ function main_contents () {
     }
     // 席替えボタンがクリックされたときに実行
     document.getElementById('btn-start').addEventListener('click', function(){
+        document.getElementById('main_modal').classList.add("is-closed");
         timer = setInterval(() =>{
             Create_html();
         }, 50);
