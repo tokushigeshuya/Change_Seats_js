@@ -14,7 +14,7 @@ function main_contents () {
             studentNumberList[randomNum] = tmp;
         }
         studentNumberList.forEach(function(num){
-            insertHTML += '<div class="seat__item">' + num + '</div>';
+            insertHTML += '<div class="seat__item">${num}</div>';
         })
         document.getElementById('seat').innerHTML = insertHTML;
     };
